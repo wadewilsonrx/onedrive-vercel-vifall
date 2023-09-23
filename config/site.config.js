@@ -17,7 +17,7 @@ module.exports = {
   kvPrefix: process.env.KV_PREFIX || '',
 
   // The name of your website. Present alongside your icon.
-  title: "Vinfall's Sage Stone",
+  title: "Tv Series Cloud",
 
   // The folder that you are to share publicly with onedrive-vercel-index. Use '/' if you want to share your root folder.
   baseDirectory: '/Public',
@@ -38,16 +38,12 @@ module.exports = {
   // [OPTIONAL] The footer component of your website. You can write HTML here, but you need to escape double
   // quotes - changing " to \". You can write anything here, and if you like badges, generate some with https://shields.io
   footer:
-    'Powered by <a href="https://github.com/Vinfall/onedrive-vercel-index" target="_blank" rel="noopener noreferrer">onedrive-vercel-index</a> with ❤ by Vinfall.',
+    'Powered by <a href="https://t.me/Animebotinfo" target="_blank" rel="noopener noreferrer"> ❤️ NXT Dev</a>.',
 
   // [OPTIONAL] This is where you specify the folders that are password protected. It is an array of paths pointing to all
   // the directories in which you have .password set. Check the documentation for details.
-  protectedRoutes: [
-    '/㊙️ Private',
-    '/🎵 Music',
-    '/🥁 Taiko/🎶 TJA/🎵 Real TJA'
-  ],
-
+  protectedRoutes: process.env.NEXT_PUBLIC_PROTECTED_ROUTES ? process.env.NEXT_PUBLIC_PROTECTED_ROUTES.split(',') : [],
+  
   // [OPTIONAL] Use "" here if you want to remove this email address from the nav bar.
   email: '',
 
@@ -56,12 +52,8 @@ module.exports = {
   // you provide. See the documentation for details.
   links: [
     {
-      name: 'Blog',
-      link: 'https://blog.vinfall.com',
-    },
-    {
-      name: 'GitHub',
-      link: 'https://github.com/Vinfall',
+      name: 'Telegram',
+      link: 'https://t.me/Animebotinfo',
     },
   ],
 
